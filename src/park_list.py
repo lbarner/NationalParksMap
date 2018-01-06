@@ -20,7 +20,7 @@ death_valley = Park('Death Valley', 'Pacific West', 'California', 1994, 34, True
 denali = Park('Denali', 'Alaska', 'Alaska', 1917, 10, False)
 dry_tortugas = Park('Dry Tortugas', 'Southeast', 'Florida', 1992, 32, False)
 everglades =Park('Everglades', 'Southeast', 'Florida', 1934, 4, False)
-gates_of_the_artic = Park('Gates of Arctic', 'Alaska,', 'Alaska', 1980, 20, False)
+gates_of_the_artic = Park('Gates of Arctic', 'Alaska', 'Alaska', 1980, 20, False)
 glacier = Park('Glacier', 'Intermountain', 'Montana', 1910, 41, False)
 glacier_bay = Park('Glacier Bay', 'Alaska', 'Alaska', 1980, 18, False)
 grand_canyon = Park('Grand Canyon', 'Intermountain', 'Arizona', 1919, 42, True)
@@ -57,7 +57,7 @@ virgin_islands = Park('Virgin Islands', 'Southeast', 'Virgin Islands', 1956, 6, 
 voyageurs = Park('Voyageurs', 'Midwest', 'Minnesota', 1971, 49, False)
 wind_cave = Park('Wind Cave', 'Midwest', 'South Dakota', 1903, 52, False)
 wrangell_st_elias = Park('Wrangell-St. Elias', 'Alaska', 'Alaska', 1980, 1, False)
-yellowstone = Park('Yellowstone', 'Pacific West', 'Wyoming', 1872, 51, False)
+yellowstone = Park('Yellowstone', 'Intermountain', 'Wyoming', 1872, 51, False)
 yosemite = Park('Yosemite', 'Pacific West', 'California', 1890, 25, True)
 zion = Park('Zion', 'Intermountain', 'Utah', 1919, 26, True)
 

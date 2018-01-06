@@ -4,6 +4,7 @@ import re
 import time
 import park_list
 from park import Park
+import register_utilities
 
 #print(Park.park_list)
 
@@ -39,11 +40,29 @@ def create_region_mask(region_park_list):
 
 if __name__ == '__main__':
 
-	for region in park_regions:
-		region_parks = find_region_parks(park_list, region)
+	# Initialize the variables
+	delay = 0.00001
+	clock_pin = 4
+	latch_pin = 3
+	output_pin = 2
 
-		print(region)
-		print(region_parks)
+	map_gpio = register_utilities.MapGPIO(output_pin, clock_pin, latch_pin, delay)
 
-		region_mask = create_region_mask(region_parks)
-		print(region_mask)
+	print(map_gpio)
+
+	while 1:
+
+		for region in park_regions:
+			region_parks = find_region_parks(park_list, region)
+
+			print(region)
+			print(region_parks)
+
+			region_mask = create_region_mask(region_parks)
+			print(region_mask)
+
+			register_utilities.clear_all(map_gpio)
+
+			register_utilities.incremental_update_register(region_mask, map_gpio)
+
+			time.sleep(10)
