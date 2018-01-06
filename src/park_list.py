@@ -1,7 +1,5 @@
 from park import Park
 
-# ISSUE WITH PARK 33
-
 # Initialize the list of parks
 acadia = Park('Acadia', 35, False)
 american_samoa = Park('American Samoa', 9, False)
