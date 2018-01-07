@@ -26,9 +26,7 @@ for line in database:
 
 	if park_visited == 'True':
 		parks[63-(park_index-1)] = 1
-		print(park_name)
 
-print(parks)
 
 # Initialize the GPIO
 clock = DigitalOutputDevice(4, initial_value=False)
